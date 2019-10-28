@@ -10,4 +10,4 @@ The API has 2 key features:
   - AI which predicts where users should be expected to call in the next hour, and sends taxi drivers to the location
   - Algorithm which finds the closest taxi ( from the given dataset ) to a user, and connects them, as well as sending the taxi to the user's location
   
-Will add more in a few days <3
+Will add more documentation and stuff to the README in the next 3 days <3
