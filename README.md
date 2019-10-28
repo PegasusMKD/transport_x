@@ -22,14 +22,9 @@ This payment system helps us eliminate:
    - fraud from taxi drivers ( ex. the drive should've cost 20$, but the driver said 25$ );
    - static prices on drives ( we are saying a STOP to different taxi meters which, dependent on the model, can make the drive cost 15$, or maybe 150$, ps, in our country this actually happens... )
    
-## Future additions to the software
-
-Some ideas we had for adding to the software which we were sadly unable to do at the moment:
- - Instant transfer from dollars ( or any other currency ) to ethereum ( and vice versa ), something like what iExec has;
-
 ## Technical Concept & Vision
 
-Our vision for this project is for other developers to be able to freely use any part of our software as seperate packages.
+Our vision for this project is for other developers to be able to freely use any part of our software as seperate packages. We want it to be something like a 'protocol'.
 
 For example, let's say that some developer from X country has a problem with finding taxi drivers in his city, and he wants to implement it there, but thinks that the application isn't user-friendly. Our goal is for the developer to be able to code his own front-end, use our middleware and back-end ( API ) with the middleware, cutting his work down by 2/3rd. Be able to release it and spread it as his own software.
 
@@ -37,3 +32,9 @@ Another example, let's say he is satisfied with the front-end, but, he thinks th
 inaccurate, he can release his own version, re-use the same front-end and middleware, just plug-in his own API. Same examples goes for the middleware changes.
 
 In our opinion, this should attract a lot more users to a decentralized network, without them even really knowing they're using it!
+
+## Future additions to the software
+
+Some ideas we had for adding to the software which we were sadly unable to do at the moment:
+ - Instant transfer from dollars ( or any other currency ) to ethereum ( and vice versa ), something like what iExec has;
+
