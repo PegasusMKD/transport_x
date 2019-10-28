@@ -14,7 +14,7 @@ The payment is handleded by a contract in the middleware.
 
 The steps that the contract goes through are:
   1. User finds a taxi and starts the drive ( we detect this dependent on how close the user is to the taxi that should pick him up)
-  2. The drive ends, the contract calculates how much the drive should've cost using the Google Maps API Data and transfers that ammount to a "dump" wallet, it also tracks/saves a succesful drive for the taxi driver, how long it lasted, how many km, etc.
+  2. The drive ends ( again, automatically detected by whether the taxi driver and client are seperated by a certain distance ) , the contract calculates how much the drive should've cost using the Google Maps API Data and transfers that ammount to a "dump" wallet, it also tracks/saves a succesful drive for the taxi driver, how long it lasted, how many km, etc.
   3. At the end of the day, It takes a look at the wallet, it takes a look at the data for the taxi drivers, scales the drivers on a "how reliable/credible" scale, and then, dependent on their rank, splits the wallet's currency to the drivers
   
 This payment system helps us eliminate:
