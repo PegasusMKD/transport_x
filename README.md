@@ -29,7 +29,7 @@ Our vision for this project is for other developers to be able to freely use any
 For example, let's say that some developer from X country has a problem with finding taxi drivers in his city, and he wants to implement it there, but thinks that the application isn't user-friendly. Our goal is for the developer to be able to code his own front-end, use our middleware and back-end ( API ), cutting his work down by 2/3rd. Be able to release it and spread it as his own software.
 
 Another example, let's say he is satisfied with the front-end, but, he thinks that maybe it's really slow or 
-inaccurate, he can release his own version, re-use the same front-end and middleware, just plug-in his own API. Same examples goes for the middleware changes.
+inaccurate, he can release his own version, re-use the same front-end and middleware, just plug-in his own API. Same example goes for the middleware changes.
 
 In our opinion, this should attract a lot more users to a decentralized network, without them even really knowing they're using it!
 
