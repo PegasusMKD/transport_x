@@ -40,8 +40,8 @@ Some ideas we had for adding to the software which we were sadly unable to do at
 
 ## Easier navigation
 
-The API: https://github.com/PegasusMKD/transport_x/tree/api/PegasusMKD/transport_x
+#### The API: https://github.com/PegasusMKD/transport_x/tree/api/PegasusMKD/transport_x
 
-The Front-End: TBA
+#### The Front-End: TBA
 
-The Middleware: TBA
+#### The Middleware: TBA
