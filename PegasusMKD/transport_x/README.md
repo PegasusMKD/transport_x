@@ -1,14 +1,24 @@
-# transport_x
-## Branch v3
-### An iExec API for the Chainlink Hackathon
+# Transport X API
+## About it's implementation
 
-It's supposed to be used as a "Protocol" as in, ( later on when the app comes out, in a few days ) anyone can use the contract we made to build their own front-end to it which makes use of our system, AI, algorithm, etc.
+The API is pretty much entirely decentralized. It is deployed on iExec which is a decentralized computing hub. It uses Docker with a Ubuntu image as it's base. It's already uploaded as an app on iExec, currently in the process of registering for the dApp Marketplace.
 
-If someone wants to make their own middleware, but use our API, they are free to do so. Or maybe someone would like to make their own API, and use our middleware, again, free to do so.
+Python version: 3.6.6
 
-The API has 2 key features:
+Dependencies it relies on:
+ - keras
+ - sklearn
+ - pandas
+ - NumPy
+ - shapely
+ - geopy
 
-  - AI which predicts where users should be expected to call in the next hour, and sends taxi drivers to the location
-  - Algorithm which finds the closest taxi ( from the given dataset ) to a user, and connects them, as well as sending the taxi to the user's location
+## About it's features
+
+The 3 features that it currently has are:
+  - Algorithm which finds the closest taxi driver to the user/client that is requesting it, and adds it to a dataset
+  - AI which predicts where the next batch of users will be on an hourly basis
+  - It is also a 'self-training' AI, there is an open socket/port ( function ) which can be called with a request at any time of the day ( or night ;-) so that it retrains itself on the new dataset
   
-Will add more documentation and stuff to the README in the next 3 days <3
+Currently, our accuracy isn't really all that great(stable 22% without overfitting), but, we are certain that it will go up once we get real-world data, compared to trying to simulate where users would 'spawn' on the map, and then training it on that. We will also get some other data we might need to make it more precise like the weather for example.
+
