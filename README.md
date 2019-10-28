@@ -38,3 +38,8 @@ In our opinion, this should attract a lot more users to a decentralized network,
 Some ideas we had for adding to the software which we were sadly unable to do at the moment:
  - Instant transfer from dollars ( or any other currency ) to ethereum ( and vice versa ), something like what iExec has;
 
+## Easier navigation
+
+The API: https://github.com/PegasusMKD/transport_x/tree/api/PegasusMKD/transport_x
+The Front-End: <To-Be-Added>
+The Middleware: <To-Be-Added>
