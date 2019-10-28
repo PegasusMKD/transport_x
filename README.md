@@ -37,6 +37,7 @@ In our opinion, this should attract a lot more users to a decentralized network,
 
 Some ideas we had for adding to the software which we were sadly unable to do at the moment:
  - Instant transfer from dollars ( or any other currency ) to ethereum ( and vice versa ), something like what iExec has;
+ - Working with fondations and companies which would like to donate to users and taxi drivers which use our application because they are aware about the impact of car pollution and work with us to try and minimize it; 
 
 ## Easier navigation
 
