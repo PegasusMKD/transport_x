@@ -46,3 +46,5 @@ Some ideas we had for adding to the software which we were sadly unable to do at
 #### The Front-End: TBA
 
 #### The Middleware: TBA
+
+#### The Chainlink External Adapter: https://github.com/PegasusMKD/transport_x/tree/chainlink_external_adapter
