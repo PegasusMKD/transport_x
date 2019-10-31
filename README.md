@@ -2,7 +2,7 @@
 
 ### The purpose of this 'deal'
 
-This contract is built to be used by any system, something like a, quote on quote, _________.
+This contract is built to be used by any system or network that utilizes LINK tokens, something like a, quote on quote, protocol.
 It's point is to be able to be used in combination with anything. Have it be a standalone asset.
 
 The contract has a couple of functions:
