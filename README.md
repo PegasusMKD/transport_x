@@ -1,4 +1,4 @@
-#Transport X external adapter
+# Transport X external adapter
 
 ### How it 'plugs' into the entire equation
 
