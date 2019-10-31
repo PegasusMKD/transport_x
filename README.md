@@ -43,10 +43,14 @@ Some ideas we had for adding to the software which we were sadly unable to do at
 
 #### The API: https://github.com/PegasusMKD/transport_x/tree/api/PegasusMKD/transport_x
 
-#### The Front-End: https://github.com/PegasusMKD/transport_x/tree/api/PegasusMKD/front-end
+#### The Front-End: https://github.com/PegasusMKD/transport_x/tree/front-end
 
-#### The Contract: https://github.com/PegasusMKD/transport_x/tree/api/PegasusMKD/chainlink_contract
+#### The Contract: https://github.com/PegasusMKD/transport_x/tree/chainlink_contract
 
 #### The Chainlink External Adapter: https://github.com/PegasusMKD/transport_x/tree/chainlink_external_adapter
 
 #### The Script/Code which calls IExec: TBA ( To be added )
+
+## Teammates/Contributors
+
+#### id997 ( where the original contract and front-end lie on ): https://github.com/id997/ChainLinkHackatonTaxnsportX
