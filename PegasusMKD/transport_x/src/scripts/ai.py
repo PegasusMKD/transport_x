@@ -3,12 +3,16 @@ import numpy as np
 import keras
 import sklearn
 from sklearn import linear_model
+import matplotlib.pyplot as pyplot
+import pickle
 from sklearn.utils import shuffle
+from matplotlib import style
 from sklearn.preprocessing import StandardScaler,OneHotEncoder, LabelBinarizer
 from sklearn.metrics import accuracy_score
 
 from shapely.geometry import Point
 import ast
+import time
 
 from scripts.extras import read,write,filter_taxis
 from scripts.taxi import calculating_distances_taxi
@@ -117,7 +121,7 @@ def predict(data):
 
     dataframe = pd.DataFrame(data_model)
     prediction = model.predict(dataframe)
-    location = ast.literal_eval(mapping[np.argmax(prediction[0])])
+    location = list(ast.literal_eval(mapping[np.argmax(prediction[0])]))
 
 
     #Filtering begins
@@ -132,9 +136,21 @@ def predict(data):
         taxi_nearby.expand(calculating_distances_taxi(nearby_data))
 
 
+    taxi_data = data
+    tmp_taxis = [tmp_taxi.id for tmp_taxi in taxi_nearby[:3]]
+    for taxi in taxi_data['taxi'].items():
+        if taxi[0] in tmp_taxis:
+            taxi_data['taxi'][taxi[0]]['location'] = location
+
+
+    print(taxi_data)
+    #time.sleep(60)
+    print()
+    print()
+    print()
     output_data = {
         "location" : location,
-        "taxis" : [taxi.id for taxi in taxi_nearby[:3]]
+        "taxi" : taxi_data['taxi']
         }
 
     return output_data

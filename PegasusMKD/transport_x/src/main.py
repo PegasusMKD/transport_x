@@ -9,6 +9,7 @@ if __name__ == "__main__":
         output = get_taxi_for_user(data)
     elif data['function'] == "predict":
         output = predict(data)
+        print(output)
     elif data['function'] == 'train':
         output = train_model()
 
