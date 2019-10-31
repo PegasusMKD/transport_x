@@ -71,12 +71,12 @@ struct Worker {
 
   }
 
-  //so they stay in the same place and in the worker and client accound we just pu the indexes
-// the we make an array of finished and unfinished based on this indexes and everything else, nice
+//so they stay in the same place and in the worker and client account we just put the indexes
+// then, we make an array of finished and unfinished tasks based on these indexes and everything else
 uint TaskIndexCounter;
 mapping (uint => Task)  Tasks;
 
-// Unpaid tasks go here, then when the contracts analyzes them, pays the workers, it refreshes;
+// Unpaid tasks go here, then when the contracts analyze them, it pays the workers, after that it refreshes;
   uint[] PayDay;
 
   //Workers accounts
@@ -87,7 +87,7 @@ mapping (uint => Task)  Tasks;
   mapping (address => Client) Clients;
   address[] public listOfClients;
 
-  //workers orders  TODO
+ //workers orders  TODO
   mapping (uint => string) WorkerOrders;
   address[] public listOfWorkerOrders;
 
@@ -126,16 +126,16 @@ mapping (uint => Task)  Tasks;
   }
 
 
-  //workerRating  0 -> 5 less than 5!
+  // 0 >= workerRating < 5 (less than 5!)
   function finishTaskCtoW(uint tid, uint workerRating)public view returns(bool){
       if(!taskExists(tid)){
         return false;
       }
-      // commented out for testing purpesses
+      // commented out for testing purposses
       // if(Tasks[tid].ClientId != msg.sender){
       //   retrun 0;
       // }
-      // commented out for testing purpesses
+      // commented out for testing purposses
       // if(workerRating > 5){
       //   retrun 0;
       // }
@@ -240,13 +240,14 @@ mapping (uint => Task)  Tasks;
 
 
   function findWorker(uint taskIndex) private{
+//Function which calls the API for a client, to find a worker to finish the job
 
     //Tasks[taskIndex].WorkerId = 0x8094d726775e32fbDe869989F5270528eBc1f0a4;
   //  requestWorker(_oracle_WorkerFinder,_jobId_WorkerFinder, _payment_WorkerFinder, t);
 // i might not need this function
-// sends task to ai
-// ai finds Worker
-// then setWorker updates the task
+// sends task to API
+// API finds Worker
+// then setWorker() updates the task
    }
 
    function payTask(uint tid) payable returns(uint ){
