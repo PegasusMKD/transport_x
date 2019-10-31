@@ -5,3 +5,4 @@ orders.json
 ./.wallet/*
 UTC-*
 wallet
+*.zip
