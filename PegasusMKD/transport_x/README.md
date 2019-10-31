@@ -18,7 +18,7 @@ Dependencies it relies on:
 The 3 features that it currently supports are:
   - An algorithm which finds the closest taxi driver to the user/client that is requesting it, and adds it to a dataset
   - AI which predicts where the next batch of users will be, on an hourly basis
-  - Tracks all the locations where a worker was requested, stores it in a dataset
+  - Tracks the location of the client from where a worker was requested, stores it in a dataset ( which we can't open/read/change because of how the iExec network is built!
   - It's also a 'self-training' AI, it has an open socket/port ( function ) which can be called with a request at any time of the day ( or night ;-) so that it retrains itself on the new dataset
   - Encryption on the location data so that even we can't really see the data
   
