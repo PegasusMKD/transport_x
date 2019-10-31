@@ -54,3 +54,10 @@ Some ideas we had for adding to the software which we were sadly unable to do at
 ## Teammates/Contributors
 
 #### id997 ( where the original contract and front-end lie on ): https://github.com/id997/ChainLinkHackatonTaxnsportX
+
+
+## Catching up with the Coders
+
+#### Web URL: https://eprotocols.org/
+
+Updates,patches and changes will be posted on that URL. There is also an e-mail address where you can contact us <3
