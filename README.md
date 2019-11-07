@@ -2,11 +2,9 @@
 # Transport X
 
 ## Concept
-
-Proof of concept of a decentralized and self-organizing/ownerless company, capable of regulating and advancing itself, with complete user data privacy and integrity, which also serves the workers.
+Proof of concept for a decentralized and self-organizing/ownerless company, capable of regulating and advancing itself, with complete user data privacy and integrity, which also serves the workers.
 
 ## Technical
-
 #### It consists of 3 main parts:
   1. The Ethereum smart contract has all the functions necessary for the company to operate, it keeps track of accounts, data and tasks all on its own.
   2. The Chainlink middleware is used to connect the smart contract with the API & artificial intelligence.
@@ -14,7 +12,7 @@ Proof of concept of a decentralized and self-organizing/ownerless company, capab
 
 ### How it works
 
-  To prove the concept we've created a taxi company. Drivers can subscribe and work for the company, clients can request rides from it, and the company organizes the drivers, finds workers for the clients and learns to be more efficient in its work.
+  To prove the concept, we've created a taxi company. Drivers can subscribe and work for the company, clients can request rides from it, and the company organizes the drivers, finds workers for the clients and learns to be more efficient in its work.
 
 ### Finding a worker
 
@@ -34,7 +32,7 @@ Proof of concept of a decentralized and self-organizing/ownerless company, capab
   3. The contract based on the AI's prediction gives tasks to drivers.
   4. The drivers then execute their task.
 
-## Data flow
+### Data flow
 
   TBA
 
@@ -70,7 +68,7 @@ Workers benefits:
 Since this is meant to be used as a protocol, in the sense of it being modular ( every piece of this software being it's own seperate entity ), developers can use anything here to make their own application using parts of our software. With this we hope we will attract more people to use decentralized networks, sometimes without even knowing that they're using them!
 
 
-## Advancing
+## Ideas for going forward
 
   1. The Ethereum smart contract makes a call to the API using Chainlink, and sends all its acquired data.
   2. The AI learns on the data collected.
