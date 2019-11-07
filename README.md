@@ -68,7 +68,7 @@ Workers benefits:
 Since this is meant to be used as a protocol, in the sense of it being modular ( every piece of this software being it's own seperate entity ), developers can use anything here to make their own application using parts of our software. With this we hope we will attract more people to use decentralized networks, sometimes without even knowing that they're using them!
 
 
-## Ideas for going forward
+## Ideas and plans for going forward
 
   1. The Ethereum smart contract makes a call to the API using Chainlink, and sends all its acquired data.
   2. The AI learns on the data collected.
