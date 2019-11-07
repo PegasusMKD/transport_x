@@ -12,11 +12,11 @@ Proof of concept of a decentralized and self-organizing/ownerless company, capab
   2. The Chainlink middleware is used to connect the smart contract with the API & artificial intelligence.
   3. The Artificial Intelligence & back-end is run on the iExec distributed computing network.
 
-## How it works
+### How it works
 
   To prove the concept we've created a taxi company. Drivers can subscribe and work for the company, clients can request rides from it, and the company organizes the drivers, finds workers for the clients and learns to be more efficient in its work.
 
-## Finding a worker
+### Finding a worker
 
   1. A client requests a ride from the smart contract and provides all the necessary data.
   2. The smart contract makes a call to the API using Chainlink, and provides the API with all the necessary data.
@@ -25,7 +25,7 @@ Proof of concept of a decentralized and self-organizing/ownerless company, capab
   5. The driver executes the task.
   6. The client pays the company and rates the driver.
 
-# Organizing workers
+### Organizing workers
 
   The company efficiency is connected to the amount of resources the workers waste, such as time and fuel.
 
@@ -34,16 +34,41 @@ Proof of concept of a decentralized and self-organizing/ownerless company, capab
   3. The contract based on the AI's prediction gives tasks to drivers.
   4. The drivers then execute their task.
 
-# Economic model
+## Data flow
+
+  TBA
+
+## Economic model
 
   The company pays its workers based on the time and the resources they have spent. Some of the criteria are as follows:
    - How much time the worker has spent with the company
    - Their rating
    - How many rides they've taken
 
-# Data flow
+## Benefits
 
-  TBA
+Clients, workers and the people of Earth gain many benefits from using the software.
+
+### Clients
+Some of the benefits that cleints gain are:
+ - Evading fraud since the payment system calculates how much the drive should cost and auto-magically gets paid.
+ - Static prices, in the sense, it doesn't really matter if you took a cab in one city or another. The price for that country will be the same ( per km ) based on it's economy and laws.
+ - Less wait time for a taxi to get to their location.
+
+### Workers
+Workers benefits:
+ - No more volatility to whether they'll manage to find clients.
+ - With the previous benefit, they also gain cooperation, or in other words, competition between them(who gets the passenger).
+ - The company doesn't take extra cuts for things like dispatchers for example, so all of their work will be 'fully' paid.
+ - Less work needed like setting up where the drive started or ended. All of it is automatic.
+ 
+ ### The world
+ Due to the previously mentioned benefits, all of us gain the next benefits as well:
+  - Less polution from cabbies just mindlessly waiting.
+
+### Something extra
+Since this is meant to be used as a protocol, in the sense of it being modular ( every piece of this software being it's own seperate entity ), developers can use anything here to make their own application using parts of our software. With this we hope we will attract more people to use decentralized networks, sometimes without even knowing that they're using them!
+
 
 ## Advancing
 
