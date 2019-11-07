@@ -1,47 +1,59 @@
+
 # Transport X
-## Application Concept
 
-The idea for the entire application is that we'd have a ( kind of ) "omnipotent" agent which will organize taxi drivers and users to have them take the optimal routes.
+## Concept
 
-With this, we also accomplish:
-   - Less wait time for users;
-   - Less polution from drivers sitting in one place or mindlessly driving around to find a client;
-   - No payments needed for dispatchers for the taxi drivers;
-   
-## Payment system of the app
+Proof of concept of a decentralized and ownerless company, capable of regulating and advancing itself, with complete user data privacy and integrity,
+that serves the workers.
 
-The payment is handleded by a contract in the middleware.
+## Technical
 
-The steps that the contract goes through are:
-  1. User finds a taxi and starts the drive ( we detect this dependent on how close the user is to the taxi that should pick him up)
-  2. The drive ends ( again, automatically detected by whether the taxi driver and client are seperated by a certain distance ) , the contract calculates how much the drive should've cost using the Google Maps API Data and transfers that ammount to a "dump" wallet, it also tracks/saves a succesful drive for the taxi driver, how long it lasted, how many km, etc.
-  3. At the end of the day, It takes a look at the wallet, it takes a look at the data for the taxi drivers, scales the drivers on a "how reliable/credible" scale, and then, dependent on their rank, splits the wallet's currency to the drivers
-  
-This payment system helps us eliminate:
-   - competition between drivers;
-   - fraud from taxi drivers ( ex. the drive should've cost 20$, but the driver said 25$ );
-   - static prices on drives ( we are saying a STOP to different taxi meters which, dependent on the model, can make the drive cost 15$, or maybe 150$, ps, in our country this actually happens... )
-   
-## Technical Concept & Vision
+    It consist of 3 main parts.
+  1. The Ethereum smart contract has all the functions necessary for the company to operate, it takes care keeping track of accounts, data and tasks.
+  2. The Chainlink middleware is used to connect the smart contract with the artificial intelligence.
+  3. The Artificial Intelligence is run on the Iexec distributed computing network.
 
-Our vision for this project is for other developers to be able to freely use any part of our software as seperate packages. We want it to be something like a 'protocol'.
+## How it works
 
-For example, let's say that some developer from X country has a problem with finding taxi drivers in his city, and he wants to implement it there, but thinks that the application isn't user-friendly. Our goal is for the developer to be able to code his own front-end, use our middleware and back-end ( API ), cutting his work down by 2/3rd. Be able to release it and spread it as his own software.
+  To prove the concept we have created  a taxi company. Drivers can subscribe and work for the company, clients can request rides from the company, and the company organizes the drivers, finds drivers for the clients and learns to be more efficient in its work.
 
-Another example, let's say he is satisfied with the front-end, but, he thinks that maybe it's really slow or 
-inaccurate, he can release his own version, re-use the same front-end and middleware, just plug-in his own API. Same example goes for the middleware changes.
+#Finding a worker
 
-In our opinion, this should attract a lot more users to a decentralized network, without them even really knowing they're using it!
+  1. A client requests a ride from the smart contract and provides all the necessary data.
+  2. The smart contract makes a call to the AI using Chainlink, and provides the AI with all the necessary data.
+  3. The AI does an analysis and finds the best worker for the task based on drivers location, credibility and rating.
+  4. The selected driver is returned to the smart contract and he is assigned a task.
+  5. The driver executes the task.
+  6. The client pays the company and rates the driver.
 
-## Future additions to the software
 
-Some ideas we had for adding to the software which we were sadly unable to do at the moment:
- - Instant transfer from dollars ( or any other currency ) to ethereum ( and vice versa ), something like what iExec has;
- - Working with fondations and companies which would like to donate to users and taxi drivers which use our application because they are aware about the impact of car pollution and work with us to try and minimize it; 
+#Advancing
+
+  1. The Ethereum smart contract makes a call to the AI using Chainlink, and sends all its acquired data.
+  2. The AI learns on this data.
+
+
+#Organizing workers
+
+  The company efficiency is connected to the amount of resources the workers waste, such as time and fuel.
+
+  1. The contract calls the AI.
+  2. The AI chooses the amount of drivers that will be online and chooses the location of the drivers, And returns the updates to the contract.
+  3. The contract based on the AI answer gives tasks to the drivers.
+  4. The drivers execute their task.
+
+#Economic model
+
+  The company pays its workers based on the time and the resources they have spent.
+
+#Data flow
+
+  TBA
+
 
 ## Easier navigation
 
-#### The API: https://github.com/PegasusMKD/transport_x/tree/api/PegasusMKD/transport_x
+#### The AI: https://github.com/PegasusMKD/transport_x/tree/api/PegasusMKD/transport_x
 
 #### The Front-End: https://github.com/PegasusMKD/transport_x/tree/front-end
 
@@ -51,10 +63,11 @@ Some ideas we had for adding to the software which we were sadly unable to do at
 
 #### The Script/Code which calls IExec: TBA ( To be added )
 
-## Teammates/Contributors
+## Team
 
-#### id997 ( where the original contract and front-end lie on ): https://github.com/id997/ChainLinkHackatonTaxnsportX
-
+#### David I.          https://github.com/id997
+#### Filip J.          https://github.com/PegasusMKD
+#### Nikola S.    
 
 ## Catching up with the Coders
 
