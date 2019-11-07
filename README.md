@@ -50,6 +50,9 @@ Proof of concept of a decentralized and self-organizing/ownerless company, capab
   1. The Ethereum smart contract makes a call to the API using Chainlink, and sends all its acquired data.
   2. The AI learns on the data collected.
   3. Updating the algorithm in the API to use the rating as a criteria for matching a worker with a client.
+  4. Instant transfer from dollars ( or any other currency ) to ethereum ( and vice versa ), something like what iExec has.
+  4. Working with fondations and companies which would like to donate to users and taxi drivers which use our application because they are aware about the impact of car pollution and work with us to try and minimize it.
+
 
 ## Easier navigation
 
